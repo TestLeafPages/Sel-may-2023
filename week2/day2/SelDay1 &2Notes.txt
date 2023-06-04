@@ -1,0 +1,212 @@
+
+Saturday's Agenda
+==============
+  8.45 to 9.00 am   Recap of week1
+ 9.00  to 10.00am   Selenium Introduction
+10.00 to 10.15am  	Classroom
+10.15 to 10.30am   	Break
+10.30 to 11.30am   	HTMl Tags and Selenium Locators(Id, name, class) 
+11.30 to 11.50am   	Classroom
+11.50 to 12.05pm   	Selenium Locators(link text,partial link text) 
+12.05 to 12.10pm	Break
+12.10 to 12.50pm    Dropdown
+12.50 to 1.05pm     Classroom
+ 1.05  to 1.15pm    Recap
+ 
+						Mediater
+ Selenium Script        ----->        browser
+ Programming lang		browser specific driver				
+						ChromeDriver			 Chromebrowser
+						EdgeDriver			     Edgebrowser
+						
+						
+World wide web Consortium-->Protocol
+
+
+Automation Script -->Req(Api Call)-->driver-->browser
+Using Java		 		Respose<----driver<---browser
+
+HTML Page-->design of the webpage-->DOM -->Document Object model
+
+
+
+To handle dropdown:
+-------------------
+locate  the element
+use the select class
+choose option
+-->3 methods
+  using index
+  using value attribute
+  using visibleText
+  
+Sunday's Agenda
+===============
+8.45   to 9.00am   Recap of day1/quiz
+9.00   to 10.30am  Basic Xpath
+10.30  to 10.50am  Classroom
+10.50  to 11.00am  Break 
+11.00  to 12.30pm  Advanced Xpath
+12.30  to 12.45pm  Classroom
+12.45  to 1.00pm   Implicitly Wait
+1.00pm to 1.10pm   Recap
+------------------------------
+
+Xpath--> XML(extended markup languange) Path
+
+When i need to use?
+-------------------
+->dont have standard locators -->id, name, class, linktext 
+
+Two ways ->Xpath
+----------------
+Absolute Xpath--> White board bus-->stops every stoppings until reach the destn
+  -->long xpath
+starts from root tag with /--> html
+  
+xpath index--->starts with 1
+
+/html/body/div[2]/div[2]/div/form/p/input
+====================================================================
+Relative Xpath-->Point to Point
+---------------
+syntax
+Starts with -->//tagname
+->attributes of the element
+
+Example :
+//input -->class, value, type
+
+Basic Relative xpath(5 types)
+-----------------------
+1.Based on attribute
+=====================
+syntax:
+//tagName[@attribute='attributValue']
+Example -->Login button
+//input[@class='decorativeSubmit']
+//input[@value='Login']
+
+2.Based on Text (textbased xpath)
+-------------------------
+//tagname[text()='textValue'] -->blacktext
+Top Brands-->swiggy
+//div[text()='Sangeetha Veg Restaurant']
+
+3. Partial Attribute based xpath
+----------------------------------
+syntax:
+//tagName[contains(@attribute,'partial attributeValue')]
+swiggy
+//div[contains(@title,'Chettinad')] -->attribute
+4.Partial Text based xpath
+--------------------------
+syntax:
+------
+//tagName[contains(text(),'partialValue')]
+
+example
+//div[contains(text(),'Veg')]
+
+5.Collection based xpath:
+--------------------------
+(Relative xpath)[index]
+Example:
+--------
+(//input[@class='inputLogin'])[2]
+
+
+Advanced Xpath-->Relationship between elements
+
+Axes/Relationship based
+-----------------------
+Grandparent-Grandchild(2 ways)
+Parent -Child (2ways)
+sibling
+cousin
+
+8 types:
+------
+1.Parent to Child:
+---------------
+syntax:
+
+(Relative xpath of Parent)/tagname of child (one step down)
+//form[@id='login']/p[2]
+
+(relative xpath of Parent)/tagname(relative xpath of child)
+   ->optional -relative xpath of the child
+//p[@class='top']/input[@id='username']
+
+2.child to parent (one step up)
+----------------
+(Relative xpath of Child)/parent::tagname
+
+Example:
+-------
+//input[@id='password']/parent::p
+
+3.GrandParent-GrandChild(Two step down)
+------------------------
+(relative xpath of GrandParent)//tagName of GrandChild
+
+(//form[@id='login']//input)[2]
+
+//form[@id='login']//input[@id='password']
+
+4.GrandChild-GrandParent (two step up)
+------------------------
+(Relative xpath of GrandChild)/ancestor::tagname of grandParent
+//input[@id='username']/ancestor::div[2]/div
+
+
+5.Elder to younger sibling
+----------------------------
+(relative xpath of elder sibling)/following-sibling::tagname of younger sibling
+
+//label[text()='Username']/following-sibling::input[@id='username']
+
+6.Younger to elder Sibling
+---------------------------
+
+(relative xpath of younger sibling)/preceding-sibling::tagname of elder sibling
+
+//input[@id='username']/preceding-sibling::label
+
+7.Elder to younger cousin
+--------------------------
+(relative xpath of Elder cousin)/following::tagname
+
+//input[@id='username']/following::input[2]
+
+8.Younger to elder cousin
+--------------------------
+Relativexpathofyounger/preceding::tagnameElder
+//input[@class='decorativeSubmit']/preceding::input[@id='password']
+
+
+
+Java Wait-->Thread.sleep(3000);
+ -->applicable for a particular element/line of code 
+
+Implicit wait -->global wait
+-->to all findElement and findElements
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
