@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37141" started-at="2023-07-15T12:38:45 IST" finished-at="2023-07-15T12:39:23 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="EnTest" duration-ms="35332" started-at="2023-07-15T12:38:45 IST" finished-at="2023-07-15T12:39:21 IST">
+      <class name="testcase.VerifyCreateLead">
+        <test-method status="PASS" signature="setValues()[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="setValues" is-config="true" duration-ms="23" started-at="2023-07-15T12:38:45 IST" finished-at="2023-07-15T12:38:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="setUpClass" is-config="true" duration-ms="369" started-at="2023-07-15T12:38:46 IST" finished-at="2023-07-15T12:38:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c1909a3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="preCondition" is-config="true" duration-ms="11653" started-at="2023-07-15T12:38:48 IST" finished-at="2023-07-15T12:38:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyLoginFunctality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="verifyLoginFunctality" duration-ms="21306" started-at="2023-07-15T12:38:59 IST" data-provider="sendData" finished-at="2023-07-15T12:39:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vidya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctality -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="postCondition" is-config="true" duration-ms="204" started-at="2023-07-15T12:39:21 IST" finished-at="2023-07-15T12:39:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testcase.VerifyCreateLead@732c2a62]" name="tearDownClass" is-config="true" duration-ms="51" started-at="2023-07-15T12:39:21 IST" finished-at="2023-07-15T12:39:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testcase.VerifyCreateLead -->
+    </test> <!-- EnTest -->
+    <test name="FrTest" duration-ms="37140" started-at="2023-07-15T12:38:45 IST" finished-at="2023-07-15T12:39:23 IST">
+      <class name="testcase.VerifyCreateLead">
+        <test-method status="PASS" signature="setValues()[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="setValues" is-config="true" duration-ms="23" started-at="2023-07-15T12:38:45 IST" finished-at="2023-07-15T12:38:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="setUpClass" is-config="true" duration-ms="371" started-at="2023-07-15T12:38:46 IST" finished-at="2023-07-15T12:38:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b0d79fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="preCondition" is-config="true" duration-ms="12044" started-at="2023-07-15T12:38:48 IST" finished-at="2023-07-15T12:39:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[French]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyLoginFunctality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="verifyLoginFunctality" duration-ms="22047" started-at="2023-07-15T12:39:00 IST" data-provider="sendData" finished-at="2023-07-15T12:39:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vidya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctality -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="postCondition" is-config="true" duration-ms="946" started-at="2023-07-15T12:39:22 IST" finished-at="2023-07-15T12:39:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testcase.VerifyCreateLead@4a7f959b]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2023-07-15T12:39:23 IST" finished-at="2023-07-15T12:39:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testcase.VerifyCreateLead -->
+    </test> <!-- FrTest -->
+  </suite> <!-- Suite -->
+</testng-results>
