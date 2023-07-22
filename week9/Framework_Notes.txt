@@ -1,0 +1,69 @@
+Hybrid Framework -> It supports TestNG and Cucumber execution
+- Our framework is designed based on Page Object Model pattern
+- We used Selenium WebDriver to interact with web application
+- We have TestNG for controlled execution
+- We have Apache POI to read the data from excel to support data driven
+- Cucumber is used to support BDD automation
+- And we have ExtentReport to generate html summary report
+
+Framework Components:
+---------------------
+com.framework.selenium.api.design
+	Browser (I) -> have the design for all the browser interactions methods
+	Element (I) -> have the design for all the element interactions methods
+	
+com.framework.selenium.api.base
+		SeleniumBase -> Implementation class for Browser and Element interfaces
+					 -> Library for our automation - contains all the reusable methods required for the automation
+					 -> Wrapper class - it contains wrapper methods
+					 -> Implemented common exception handling at method level
+		
+com.framework.testng.api.base - ProjectSpecificMethod.java -> Base class for all the pages and the testcases. It is used to have common methods and variable for the project
+com.leaftaps.pages -> used to maintain the java classes related to each page
+com.leaftaps.testcases -> used to maintain the java classes related to each testcase
+com.framework.utils -> Used to have common untilities to interact with external applications
+	DataLibrary -> Program to read the data from excel
+	Reporter -> Program with ExtentReport configuration
+	
+Hierarchy of the classes in the framework:
+------------------------------------------
+AbstractTestNGCucumberTests
+	DriverInstance
+		Reporter
+			SeleniumBase
+				ProjectSpecificMethods
+					Testcases & Pages	
+					
+					
+Execution of any testcase will follow TestNG annotations					
+					
+@BeforeSuite					-> startReport() (Reporter)
+	@BeforeTest					-> setValues() (Testcase)
+		@BeforeClass			-> startTestCase() (Reporter)		
+			@DataProvider		-> fetchData() (ProjectSpecificMethods)
+				@BeforeMethod	-> preCondition() (ProjectSpecificMethods)
+					@Test		-> Testcase
+				@AfterMethod	-> postCondition() (ProjectSpecificMethods)
+		@AfterClass 			-> NA
+	@AfterTest 					-> NA
+@AfterSuite						-> endResult() (Reporter)
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+
